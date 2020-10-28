@@ -1,0 +1,37 @@
+/*This css file takes care
+of the sections Work Experience and Education*/
+.content .grid {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+.content .subtitle {
+    font-size: 12px;
+}
+
+.content .book-list {
+    padding-left: var(--space-medium);
+    list-style: square;
+}
+
+.content {
+    margin-bottom: 0;
+}
+
+/*Tablets*/
+@media (min-width: 550px){
+    .content .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: var(--space-medium);
+    }
+}
+
+/*Desktop*/
+@media (min-width: 750px){
+    .content .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: var(--space-big);
+    }
+}
